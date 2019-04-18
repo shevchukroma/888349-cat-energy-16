@@ -2,33 +2,39 @@
     width: 320px;
     display: flex;
     flex-direction: column;
-    &__link--logo {
+}
+
+.page-footer__link {
+    display: block;
+    height: 19px;
+    width: 24px;
+    background: no-repeat 50% 50%;
+    &--vk {
+        background-image:  url("../img/icon-vk-mobile.svg");
+    }
+    &--insta {
+        background-image: url("../img/icon-insta-mobile.svg");
+    }
+    &--fb {
+        background-image: url("../img/icon-fb-mobile.svg");
+    }
+    &--logo {
         width: 128px;
         height: 24px;
         margin: 0 auto;        
     }
-    &__list {
-        list-style: none;
-        display: flex;
-        padding: 0;
-        justify-content: space-around;
-        width: 280px;
-        margin: 0 auto;
-    }
-    &__link {
-        display: block;
-        height: 19px;
-        width: 24px;
-        background: url("../img/icon-vk-mobile.svg") no-repeat 50% 50%;
-    }
-    &__link--insta {
-        background-image: url("../img/icon-insta-mobile.svg");
-    }
-    &__link--fb {
-        background-image: url("../img/icon-fb-mobile.svg");
-    }
-    &__copyright {
-        display: flex;
-        justify-content: space-between;
-    }
+}
+
+.page-footer__copyright {
+    display: flex;
+    justify-content: space-between;
+}
+
+.page-footer__list {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    justify-content: space-around;
+    width: 280px;
+    margin: 0 auto;
 }

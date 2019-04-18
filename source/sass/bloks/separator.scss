@@ -1,0 +1,14 @@
+.separator {
+    @include sep;
+    width: 320px;
+}
+
+.separator-footer {
+    @include sep;
+    width: 280px;
+}
+
+.separator-categories {
+    @include sep;
+    width: 240px;
+}

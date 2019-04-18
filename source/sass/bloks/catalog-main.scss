@@ -1,81 +1,87 @@
 .catalog-main {
     width: 320px;
-    &__title {
-        font-size: 36px;
-        line-height: 60px;
-        text-align: center;
-    }
-    &__list {
-        padding: 0;
-    }
-    .separator {
-        width: 320px;
-    }
-    &__item {
-        width: 280px;
-        margin: 0 auto;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-    &__button {
-        width: 280px;
-        margin: 0 auto;
-        height: 40px;
-        background-color: #68b738;
-        text-decoration: none;
-        color: white;
-        text-transform: uppercase;
-        font-size: 16px;
-        line-height: 18px;
-        text-align: center;
-        padding-top: 10px;
-        box-sizing: border-box;
-    }
-    &__item--description {
+}
+
+.catalog-main__title {
+    font-size: 36px;
+    line-height: 60px;
+    text-align: center;
+}
+
+.catalog-main__list {
+    padding: 0;
+}
+
+.catalog-main__item {
+    width: 280px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    &--description {
         text-transform: uppercase;
         font-size: 16px;
         line-height: 20px;
         width: 80px;
     }
-    &__table {
-        width: 140px;
-    }
-    &__table--right-col {
+}
+
+.catalog-main__button {
+    width: 280px;
+    margin: 0 auto;
+    height: 40px;
+    background-color: #68b738;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+
+.catalog-main__table {
+    width: 140px;
+    &--right-col {
         text-align: right;
     }
-    &__add-item {
-        display: block;
-        width: 30px;
-        height: 30px;
-        margin: 0 auto;
-        background: url("../img/icon-plus-mobile.svg") no-repeat 50% 50%;
-    }
-    &__show-more {
-        text-align: center;
-        text-transform: uppercase;
-        font-size: 16px;
-        line-height: 20px;
-    }
-    &__show-description {
-        font-family: Arial;
-        font-size: 12px;
-        line-height: 16px;
-        text-align: center;
-    }
-    &__show-btn {
-        display: block;
-        width: 280px;
-        margin: 0 auto;
-        height: 40px;
-        background-color: #f2f2f2;
-        text-decoration: none;
-        text-transform: uppercase;
-        font-size: 16px;
-        color: black;
-        line-height: 18px;
-        text-align: center;
-        padding-top: 10px;
-        box-sizing: border-box;
-    }
+}
+
+.catalog-main__add-item {
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+    background: url("../img/icon-plus-mobile.svg") no-repeat 50% 50%;
+}
+
+.catalog-main__show-more {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.catalog-main__show-description {
+    font-family: Arial;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+}
+
+.catalog-main__show-btn {
+    display: block;
+    width: 280px;
+    margin: 0 auto;
+    height: 40px;
+    background-color: #f2f2f2;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: black;
+    line-height: 18px;
+    text-align: center;
+    padding-top: 10px;
+    box-sizing: border-box;
 }

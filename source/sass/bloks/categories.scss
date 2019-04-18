@@ -1,31 +1,26 @@
 .categories {
     width: 320px;
-    &__less {
-        width: 280px;
-        margin: 0 auto;
-        background-color: #f2f2f2;
+}
+
+.categories__less {
+    width: 280px;
+    margin: 0 auto;
+    background-color: #f2f2f2;
+    &--description {
+        font-size: 14px;
+        line-height: 18px;
+        font-family: Arial;
     }
-    &__less--description {
-            font-size: 14px;
-            line-height: 18px;
-            font-family: Arial;
-    }
-    .round {
-        position: absolute;
-        display: block;
-        background: #68b738;
-        border-radius: 50%;
-        margin: auto 0;
-        width: 50px;
-        height: 50px;
-    }
-    &__less--title {
+    &--title {
         font-size: 24px;
         line-height: 37px;
         text-align: center;
         position: relative;
     }
-    &__less--cat {
+    &--bg {
+        @include round;
+    }
+    &--cat {       
         background: url("../img/icon-cat-slim.svg") no-repeat 10% 50%;
         position: absolute;
         margin: auto 0;
@@ -33,37 +28,29 @@
         height: 49px;
         width: 35px;
     }
-    &__less--catalog {
+    &--catalog {
         text-decoration: none;
         text-transform: uppercase;
         color: black;
-    }    
-    &__more {
-        width: 280px;
-        margin: 0 auto;
-        background-color: #f2f2f2;
     }
-    &__more--description {
-            font-size: 14px;
-            line-height: 18px;
-            font-family: Arial;
+}
+
+.categories__more {
+    width: 280px;
+    margin: 0 auto;
+    background-color: #f2f2f2;
+    &--description {
+        font-size: 14px;
+        line-height: 18px;
+        font-family: Arial;
     }
-    .round {
-        position: absolute;
-        display: block;
-        background: #68b738;
-        border-radius: 50%;
-        margin: auto 0;
-        width: 50px;
-        height: 50px;
-    }
-    &__more--title {
+    &--title {
         font-size: 24px;
         line-height: 37px;
         text-align: center;
         position: relative;
     }
-    &__more--cat {
+    &--cat {
         background: url("../img/icon-cat-pro.svg") no-repeat 10% 50%;
         position: absolute;
         margin: auto 0;
@@ -71,16 +58,12 @@
         height: 28px;
         width: 67px;
     }
-    &__more--catalog {
+    &--catalog {
         text-decoration: none;
         text-transform: uppercase;
         color: black;
     }
-}
-
-.separator {
-    display: block;
-    height: 1px;
-    width: 240px;
-    background-color: #d9d9d9;
+    &--bg {
+        @include round;
+    }
 }

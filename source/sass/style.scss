@@ -1,10 +1,9 @@
+@import "bloks/mixin.scss";
 @import "bloks/page-header.scss";
 @import "bloks/main-header.scss";
 @import "bloks/categories.scss";
 @import "bloks/explanation.scss";
 @import "bloks/page-footer.scss";
 @import "bloks/catalog-main.scss";
-
-body {
-    font-family: 'Oswald', Arial, sans-serif;
-}
+@import "bloks/common.scss";
+@import "bloks/separator.scss";
