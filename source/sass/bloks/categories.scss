@@ -1,69 +1,79 @@
 .categories {
-    width: 320px;
+  width: 320px;
 }
 
 .categories__less {
-    width: 280px;
-    margin: 0 auto;
-    background-color: #f2f2f2;
-    &--description {
-        font-size: 14px;
-        line-height: 18px;
-        font-family: Arial;
-    }
-    &--title {
-        font-size: 24px;
-        line-height: 37px;
-        text-align: center;
-        position: relative;
-    }
-    &--bg {
-        @include round;
-    }
-    &--cat {
-        background: url("../img/icon-cat-slim.svg") no-repeat 10% 50%;
-        position: absolute;
-        margin: auto 0;
-        display: block;
-        height: 49px;
-        width: 35px;
-    }
-    &--catalog {
-        text-decoration: none;
-        text-transform: uppercase;
-        color: black;
-    }
+  width: 280px;
+  margin: 0 auto;
+  background-color: #f2f2f2;
+
+  &--description {
+    font-size: 14px;
+    line-height: 18px;
+    font-family: "Arial";
+  }
+
+  &--title {
+    font-size: 24px;
+    line-height: 37px;
+    text-align: center;
+    position: relative;
+  }
+
+  &--bg {
+    @include round;
+  }
+
+  &--cat {
+    background: url("../img/icon-cat-slim.svg") no-repeat 10% 50%;
+    position: absolute;
+    margin: auto 0;
+    display: block;
+    height: 49px;
+    width: 35px;
+  }
+
+  &--catalog {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+  }
 }
 
 .categories__more {
-    width: 280px;
-    margin: 0 auto;
-    background-color: #f2f2f2;
-    &--description {
-        font-size: 14px;
-        line-height: 18px;
-        font-family: Arial;
-    }
-    &--title {
-        font-size: 24px;
-        line-height: 37px;
-        text-align: center;
-        position: relative;
-    }
-    &--cat {
-        background: url("../img/icon-cat-pro.svg") no-repeat 10% 50%;
-        position: absolute;
-        margin: auto 0;
-        display: block;
-        height: 28px;
-        width: 67px;
-    }
-    &--catalog {
-        text-decoration: none;
-        text-transform: uppercase;
-        color: black;
-    }
-    &--bg {
-        @include round;
-    }
+  width: 280px;
+  margin: 0 auto;
+  background-color: #f2f2f2;
+
+  &--description {
+    font-size: 14px;
+    line-height: 18px;
+    font-family: "Arial";
+  }
+
+  &--title {
+    font-size: 24px;
+    line-height: 37px;
+    text-align: center;
+    position: relative;
+  }
+
+  &--cat {
+    background: url("../img/icon-cat-pro.svg") no-repeat 10% 50%;
+    position: absolute;
+    margin: auto 0;
+    display: block;
+    height: 28px;
+    width: 67px;
+   }
+
+  &--catalog {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+  }
+
+  &--bg {
+    @include round;
+  }
 }

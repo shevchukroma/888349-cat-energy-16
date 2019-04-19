@@ -1,44 +1,48 @@
 .explanation {
-    width: 320px;
+  width: 320px;
 }
 
-.explanation-content {
-    width: 280px;
-    margin: 0 auto;
+.explanation__content {
+  width: 280px;
+  margin: 0 auto;
 }
 
 .explanation__list {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
 .explanation__title {
-    font-size: 36px;
-    line-height: 60px;
+  font-size: 36px;
+  line-height: 60px;
 }
 
 .explanation__item {
-    font-family: Arial;
-    font-size: 14px;
-    line-height: 18px;
-    padding-left: 80px;
-    box-sizing: border-box;
-    background: no-repeat 5% 50%;
-    position: relative;
-    &--food {
-        @include icon;
-        background-image: url("../img/advantage-leaf@1x.png");
-    }
-    &--recipe {
-        @include icon;
-        background-image: url("../img/advantage-powder@1x.png");
-    }
-    &--periodicity {
-        @include icon;
-        background-image: url("../img/advantage-dining@1x.png");
-    }
-    &--month {
-        @include icon;
-        background-image: url("../img/advantage-clock@1x.png");
-    }
+  font-family: "Arial";
+  font-size: 14px;
+  line-height: 18px;
+  padding-left: 80px;
+  box-sizing: border-box;
+  background: no-repeat 5% 50%;
+  position: relative;
+
+  &--food {
+    @include icon;
+    background-image: url("../img/advantage-leaf@1x.png");
+  }
+
+  &--recipe {
+    @include icon;
+    background-image: url("../img/advantage-powder@1x.png");
+  }
+
+  &--periodicity {
+    @include icon;
+    background-image: url("../img/advantage-dining@1x.png");
+  }
+
+  &--month {
+    @include icon;
+    background-image: url("../img/advantage-clock@1x.png");
+  }
 }
