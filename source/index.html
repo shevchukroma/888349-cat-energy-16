@@ -3,13 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
       <a href="#" class="page-header__logo">
-        <img src="http://placehold.it/150x100" class="logo">
+        <img src="img/logo-mobile.svg" class="logo" width="191" height="38">
       </a>
-      <a href="#" class="page-header__link"><p class="link">Cat energy</p></a>
       <a href="#" class="page-header__menu"></a>
     </header>
     <main class="page-main">
@@ -20,38 +21,44 @@
       </section>
       <section class="categories">
         <div class="categories__less">
-          <h3 class="categories__title">Похудение</h3>
-          <p class="categories__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-          <a href="#" class="categories__catalog">Каталог slim</a>
+          <h3 class="categories__less categories__less--title"><span class="categories__less categories__less--bg"></span><span class="categories__less categories__less--cat"></span>Похудение</h3>
+          <p class="categories__less categories__less--description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+          <span class="separator separator--categories"></span>
+          <a href="#" class="categories__less categories__less--catalog">Каталог slim</a>
         </div>
         <div class="categories__more">
-          <h3 class="categories__title">Набор массы</h3>
-          <p class="categories__description">Заработать авторитет среди дворовых котов и даже собак? Серия Сat Energy Pro поможет вышему коту нарастить необходимые мышцы!</p>
-          <a href="#" class="categories__catalog">Каталог pro</a>
+          <h3 class="categories__more categories__more--title"><span class="categories__more categories__more--bg"></span><span class="categories__more categories__more--cat"></span>Набор массы</h3>
+          <p class="categories__more categories__more--description">Заработать авторитет среди дворовых котов и даже собак? Серия Сat Energy Pro поможет вышему коту нарастить необходимые мышцы!</p>
+          <span class="separator separator--categories"></span>
+          <a href="#" class="categories__more categories__more--catalog">Каталог pro</a>
         </div>
       </section>
       <section class="explanation">
-        <h2 сlass="explanation__title">Как это работает</h2>
-        <ul class="explanation__list">
-          <li class="explanation__item">Функциональное питание содержит только полезные питательные вещества.</li>
-          <li class="explanation__item">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</li>
-          <li class="explanation__item">Замените один-два приема обычной еды на наше функциональное питание.</li>
-          <li class="explanation__item">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</li>
-        </ul>
+        <div class="explanation__content">
+            <h3 class="explanation__title">Как это работает</h3>
+            <ul class="explanation__list">
+              <li class="explanation__item"><span class="explanation__item explanation__item--food"></span>Функциональное питание содержит только полезные питательные вещества.</li>
+              <li class="explanation__item"><span class="explanation__item explanation__item--recipe"></span>Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</li>
+              <li class="explanation__item"><span class="explanation__item explanation__item--periodicity"></span>Замените один-два приема обычной еды на наше функциональное питание.</li>
+              <li class="explanation__item"><span class="explanation__item explanation__item--month"></span>Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</li>
+            </ul>
+        </div>
       </section>
     </main>
     <footer class="page-footer">
-      <a href="#" class="page-footer__link"><p class="link">Cat energy</p></a>
-      <div class="social">
-        <ul class="social__list">
-          <li class="social__item"><a href="#" class="social__link social__link--vk"></a></li>
-          <li class="social__item"><a href="#" class="social__link social__link--insta"></a></li>
-          <li class="social__item"><a href="#" class="social__link social__link--fb"></a></li>
+      <a href="#" class="page-footer__link page-footer__link--logo"><img src="img/logo-footer.svg" alt="logo-footer" width="128" height="24"></a>
+      <span class="separator separator--footer"></span>
+      <div class="page-footer__social">
+        <ul class="page-footer__list">
+          <li class="page-footer__item"><a href="#" class="page-footer__link page-footer__link--vk"></a></li>
+          <li class="page-footer__item"><a href="#" class="page-footer__link page-footer__link--insta"></a></li>
+          <li class="page-footer__item"><a href="#" class="page-footer__link page-footer__link--fb"></a></li>
         </ul>
       </div>
-      <div class="copyright">
-        <p class="copyright__dev">HTML Academy</p>
-        <a href="#" class="copyright__logo"><img src="#" alt="HTML-Academy"></a>
+      <span class="separator separator--footer"></span>
+      <div class="page-footer__copyright">
+        <p class="page-footer__copyright page-footer__copyright--dev">HTML Academy</p>
+        <a href="#" class="page-footer__copyright page-footer__copyright--logo"><img src="img/htmlacademy.svg" alt="HTML-Academy" width="27" height="35"></a>
       </div>
     </footer>
   </body>

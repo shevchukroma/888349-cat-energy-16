@@ -1,0 +1,16 @@
+.separator {
+  &--catalog {
+    @include sep;
+    width: 320px;
+  }
+
+  &--footer {
+    @include sep;
+    width: 280px;
+  }
+
+  &--categories {
+    @include sep;
+    width: 240px;
+  }
+}
