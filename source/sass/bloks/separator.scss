@@ -1,14 +1,17 @@
 .separator {
-  @include sep;
-  width: 320px;
-}
 
-.separator-footer {
-  @include sep;
-  width: 280px;
-}
+  &--catalog {
+    @include sep;
+    width: 320px;
+  }
 
-.separator-categories {
-  @include sep;
-  width: 240px;
+  &--footer {
+    @include sep;
+    width: 280px;
+  }
+
+  &--categories {
+    @include sep;
+    width: 240px;
+  }
 }
