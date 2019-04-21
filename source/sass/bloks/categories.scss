@@ -167,7 +167,7 @@
   }
 
   .categories__less {
-    width: 570px;    
+    width: 570px;
     &--bg {
       @include round;
       top: 20px;
@@ -181,12 +181,12 @@
       height: 50px;
       width: 50px;
     }
-    
+
     &--title {
       text-align: center;
       width: 250px;
     }
-    
+
     &--description {
       width: 460px;
     }
@@ -199,7 +199,7 @@
   }
 
   .categories__more {
-    width: 570px;    
+    width: 570px;
     &--bg {
       @include round;
       top: 20px;
