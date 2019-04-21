@@ -100,6 +100,7 @@
     height: 372px;
     padding: 0 55px;
     box-sizing: border-box;
+
     &--description {
       width: 375px;
       margin: 0;
@@ -131,6 +132,7 @@
     height: 372px;
     padding: 0 55px;
     box-sizing: border-box;
+
     &--description {
       width: 375px;
       margin: 0;
@@ -168,6 +170,7 @@
 
   .categories__less {
     width: 570px;
+
     &--bg {
       @include round;
       top: 20px;
@@ -200,6 +203,7 @@
 
   .categories__more {
     width: 570px;
+    
     &--bg {
       @include round;
       top: 20px;

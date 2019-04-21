@@ -32,6 +32,7 @@
     width: 768px;
     min-height: 110px;
   }
+
   .page-header__menu-list {
     display: flex;
     list-style: none;
@@ -41,6 +42,7 @@
     line-height: 24px;
     text-transform: uppercase;
   }
+
   .page-header__menu-btn {
     display: none;
   }
@@ -50,13 +52,16 @@
   .page-header {
     width: 1440px;
     padding: 0 110px;
-    background:  url("../img/index-background-desktop@1x.jpg") no-repeat 100% 0;
+    background: url("../img/index-background-desktop@1x.jpg") no-repeat 100% 0;
+
     &--catal {
       background: none;
     }
   }
+
   .page-header__menu-list {
     color: white;
+    
     &--catal {
       color: black;
     }
