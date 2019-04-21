@@ -7,11 +7,18 @@
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
 </head>
 <body>
-    <header class="page-header">
-        <a href="#" class="page-header__logo">
-          <img src="img/logo-mobile.svg" class="logo" width="191" height="38">
-        </a>
-        <a href="#" class="page-header__menu"></a>
+    <header class="page-header page-header--catal">
+      <a href="#" class="page-header__logo">
+        <img src="img/logo-mobile.svg" class="logo" width="191" height="38">
+      </a>
+      <nav class="page-header__menu">
+        <ul class="page-header__menu-list page-header__menu-list--catal">
+          <li>Главная</li>
+          <li>Каталог продукции</li>
+          <li>Подбор программы</li>
+        </ul>
+        <a href="#" class="page-header__menu-btn"></a>
+      </nav>
     </header>
     <main class="catalog-main">
         <span class="separator separator--catalog"></span>
@@ -172,11 +179,13 @@
                 <a href="#" class="catalog-main__button">Заказать</a>
             </li>
             <span class="separator separator--catalog"></span>
+            <li class="catalog-main__item">                
+                <a href="#" class="catalog-main__add-item"></a>
+                <p class="catalog-main__show-more">Показать еще 100500 товаров</p>
+                <p class="catalog-main__show-description">На самом деле вкусов гораздо больше!</p>
+                <a href="#" class="catalog-main__show-btn">Показать все</a>
+            </li>
         </ul>
-        <a href="#" class="catalog-main__add-item"></a>
-        <p class="catalog-main__show-more">Показать еще 100500 товаров</p>
-        <p class="catalog-main__show-description">На самом деле вкусов гораздо больше!</p>
-        <a href="#" class="catalog-main__show-btn">Показать все</a>
     </main>
     <footer class="page-footer">
       <a href="#" class="page-footer__link page-footer__link--logo"><img src="img/logo-footer.svg" alt="logo-footer" width="128" height="24"></a>

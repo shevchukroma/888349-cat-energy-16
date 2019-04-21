@@ -1,15 +1,14 @@
 .explanation {
   width: 320px;
-}
-
-.explanation__content {
-  width: 280px;
-  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
 .explanation__list {
   list-style: none;
   padding: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .explanation__title {
@@ -45,4 +44,83 @@
     @include icon;
     background-image: url("../img/advantage-clock@1x.png");
   }
+}
+
+@media (min-width: 768px) {
+  .explanation {
+    width: 768px;
+    padding: 0 30px;
+  }
+
+  .explanation__description {
+    width: 200px;
+  }
+
+  .explanation__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .explanation__item {
+    width: 354px;
+    padding: 120px 0 0 0;
+    margin-bottom: 130px;
+    &--food {
+      top: 1px;
+      width: 81px;
+      height: 81px;
+      padding: 0;
+    }
+
+    &--recipe {
+      width: 81px;
+      height: 81px;
+      top: 1px;
+      padding: 0;
+    }
+
+    &--periodicity {
+      width: 81px;
+      height: 81px;
+      top: 1px;
+      padding: 0;
+    }
+
+    &--month {
+      width: 81px;
+      height: 81px;
+      top: 1px;
+      padding: 0;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .explanation {
+    width: 1440px;
+    padding: 0 110px;
+  }
+
+  .explanation__item {
+    width: 245px;
+    &--food {
+      width: 81px;
+    }
+
+    &--recipe {
+      width: 81px;
+    }
+
+    &--periodicity {
+      width: 81px;
+    }
+
+    &--month {
+      width: 81px;
+    }
+  }
+}
+
+  .explanation__list {
+    justify-content: space-between;
 }
