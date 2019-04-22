@@ -1,3 +1,17 @@
 body {
   font-family: "Oswald", "Arial", sans-serif;
+  margin: 0 auto;
+  width: 320px;
+}
+
+@media (min-width: 768px) {
+  body {
+    width: 768px;
+  }
+}
+
+@media (min-width: 1440px) {
+  body {
+    width: 1440px;
+  }
 }

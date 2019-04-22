@@ -14,3 +14,9 @@
     width: 240px;
   }
 }
+
+@media (min-width: 768px) {
+  .separator {
+    display: none;
+  }
+}
