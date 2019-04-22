@@ -26,6 +26,11 @@
   display: none;
 }
 
+.page-header__link {
+  text-decoration: none;
+  color: black;
+}
+
 @media (min-width: 768px) {
   .page-header {
     padding: 0 30px;
@@ -59,10 +64,10 @@
     }
   }
 
-  .page-header__menu-list {
+  .page-header__link {
     color: white;
-
-    &--catal {
+    
+    &--other {
       color: black;
     }
   }

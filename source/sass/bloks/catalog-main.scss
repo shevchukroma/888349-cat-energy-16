@@ -102,6 +102,28 @@
     width: 768px;
     padding: 0 30px;
   }
+
+  .catalog-main__item {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    text-align: center;
+  }
+
+  .catalog-main__name {
+    margin: 0 auto;
+  }
+
+  .catalog-main__table {
+    margin: 0 auto;
+  }
+
+  .catalog-main__button {
+    width: 170px;
+  }
+
+  .catalog-main__photo {
+    margin: 0 auto;
+  }
 }
 
 @media (min-width: 1440px) {
