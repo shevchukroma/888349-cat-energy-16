@@ -11,6 +11,7 @@
   height: 19px;
   width: 24px;
   background: no-repeat 50% 50%;
+  margin: 0 auto 31px auto;
 
   &--vk {
     background-image: url("../img/icon-vk-mobile.svg");
@@ -33,15 +34,21 @@
 .page-footer__copyright {
   display: flex;
   justify-content: space-between;
+  margin: 10px 0;
+  &--dev {
+    margin: auto 0;
+    letter-spacing: 2px;
+  }
 }
 
 .page-footer__list {
   list-style: none;
   display: flex;
+  width: 133px;
+  height: 19px;
   padding: 0;
-  justify-content: space-around;
-  width: 280px;
-  margin: 0 auto;
+  justify-content: space-between;
+  margin: 22px auto;
 }
 
 @media (min-width: 768px) {
@@ -51,11 +58,39 @@
     padding: 0 30px;
     justify-content: space-between;
   }
+
+  .page-footer__link {
+    &--logo {
+      margin: 0;
+    }
+  }
+
+  .page-footer__social {
+    height: 50px;
+  }
+
+  .page-footer__copyright {
+    margin: 0;
+
+    &--dev {
+      margin-right: 12px;
+    }
+  }
+
+  .page-footer__list {
+    margin: 0;
+  }
 }
 
 @media (min-width: 1440px) {
   .page-footer {
     width: 1440px;
     padding: 0 110px;
+  }
+
+  .page-footer__link {
+    &--logo {
+      width: 152px;
+    }
   }
 }

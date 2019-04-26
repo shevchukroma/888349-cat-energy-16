@@ -7,26 +7,28 @@
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
 </head>
 <body>
-    <header class="page-header page-header--catal">
+    </head>
+    <body>
+    <header class="page-header page-header--no-js page-header--catal">
       <a href="#" class="page-header__logo">
         <img src="img/logo-mobile.svg" class="logo" width="191" height="38">
       </a>
       <nav class="page-header__menu">
-        <ul class="page-header__menu-list page-header__menu-list--catal">
-          <li><a href="index.html" class="page-header__link page-header__link--other">Главная</a></li>
-          <li><a href="catalog.html" class="page-header__link page-header__link--other">Каталог продукции</a></li>
-          <li><a href="form.html" class="page-header__link page-header__link--other">Подбор программы</a></li>
+        <ul class="page-header__menu-list">
+          <li class="page-header__menu-item"><a href="index.html" class="page-header__link">Главная</a></li>
+          <li class="page-header__menu-item"><a href="catalog.html" class="page-header__link">Каталог продукции</a></li>
+          <li class="page-header__menu-item"><a href="form.html" class="page-header__link">Подбор программы</a></li>
         </ul>
         <a href="#" class="page-header__menu-btn"></a>
+        <button class="page-header__modal-close"></button>
       </nav>
     </header>
     <main class="catalog-main">
         <span class="separator separator--catalog"></span>
         <h2 class="catalog-main__title">Каталог продукции</h2>
-        <span class="separator separator--catalog"></span>
         <ul class="catalog-main__list">
             <li class="catalog-main__item">
-                <img src="img/chicken-small-mobile@1x.jpg" alt="product" class="catalog-main__photo" width="140" height="144">
+                <span class="catalog-main__photo catalog-main__photo--chicken-500"></span>
                 <div class="catalog-main__description">
                     <p class="catalog-main__name">Cat energy pro 500 г</p>
                     <table class="catalog-main__table">
@@ -48,7 +50,7 @@
             </li>
             <span class="separator separator--catalog"></span>
             <li class="catalog-main__item">
-                <img src="img/chicken-big-mobile@1x.jpg" alt="product" class="catalog-main__photo" width="140" height="144">
+                <span class="catalog-main__photo catalog-main__photo--chicken-1000"></span>
                 <div class="catalog-main__description">
                     <p class="catalog-main__name">Cat energy pro 1000 г</p>
                     <table class="catalog-main__table">
@@ -62,7 +64,7 @@
                             </tr>
                             <tr>
                                 <td>Цена</td>
-                                <td class="catalog-main__table catalog-main__table--right-col">1000 р</td>
+                                <td class="catalog-main__table catalog-main__table--right-col">1000 Р.</td>
                             </tr>
                     </table>
                 </div>
@@ -70,7 +72,7 @@
             </li>
             <span class="separator separator--catalog"></span>
             <li class="catalog-main__item">
-                <img src="img/fish-small-mobile@1x.jpg" alt="product" class="catalog-main__photo" width="140" height="144">
+                <span class="catalog-main__photo catalog-main__photo--fish-500"></span>
                 <div class="catalog-main__description">
                     <p class="catalog-main__name">Cat energy pro 500 г</p>
                     <table class="catalog-main__table">
@@ -84,7 +86,7 @@
                         </tr>
                         <tr>
                             <td>Цена</td>
-                            <td class="catalog-main__table catalog-main__table--right-col">700 р</td>
+                            <td class="catalog-main__table catalog-main__table--right-col">700 Р.</td>
                         </tr>
                     </table>
                 </div>
@@ -92,7 +94,7 @@
             </li>
             <span class="separator separator--catalog"></span>
             <li class="catalog-main__item">
-                <img src="img/fish-big-mobile@1x.jpg" alt="product" class="catalog-main__photo" width="140" height="144">
+                <span class="catalog-main__photo catalog-main__photo--fish-1000"></span>
                 <div class="catalog-main__description">
                     <p class="catalog-main__name">Cat energy pro 1000 г</p>
                     <table class="catalog-main__table">
@@ -106,7 +108,7 @@
                         </tr>
                         <tr>
                             <td>Цена</td>
-                            <td class="catalog-main__table catalog-main__table--right-col">1000 р</td>
+                            <td class="catalog-main__table catalog-main__table--right-col">1000 Р.</td>
                         </tr>
                     </table>
                 </div>
@@ -114,7 +116,7 @@
             </li>
             <span class="separator separator--catalog"></span>
             <li class="catalog-main__item">
-                <img src="img/buckwheat-small-mobile@1x.jpg" alt="product" class="catalog-main__photo" width="140" height="144">
+                <span class="catalog-main__photo catalog-main__photo--buckwheat-500"></span>
                 <div class="catalog-main__description">
                     <p class="catalog-main__name">Cat energy slim 500 г</p>
                     <table class="catalog-main__table">
@@ -128,7 +130,7 @@
                         </tr>
                         <tr>
                             <td>Цена</td>
-                            <td class="catalog-main__table catalog-main__table--right-col">400 р</td>
+                            <td class="catalog-main__table catalog-main__table--right-col">400 Р.</td>
                         </tr>
                     </table>
                 </div>
@@ -136,7 +138,7 @@
             </li>
             <span class="separator separator--catalog"></span>
             <li class="catalog-main__item">
-                <img src="img/buckwheat-big-mobile@1x.jpg" alt="product" class="catalog-main__photo" width="140" height="144">
+                <span class="catalog-main__photo catalog-main__photo--buckwheat-1000"></span>
                 <div class="catalog-main__description">
                     <p class="catalog-main__name">Cat energy slim 1000 г</p>
                     <table class="catalog-main__table">
@@ -150,7 +152,7 @@
                         </tr>
                         <tr>
                             <td>Цена</td>
-                            <td class="catalog-main__table catalog-main__table--right-col">700 р</td>
+                            <td class="catalog-main__table catalog-main__table--right-col">700 Р.</td>
                         </tr>
                     </table>
                 </div>
@@ -158,7 +160,7 @@
             </li>
             <span class="separator separator--catalog"></span>
             <li class="catalog-main__item">
-                <img src="img/rice-small-mobile@1x.jpg" alt="product" class="catalog-main__photo" width="140" height="144">
+                <span class="catalog-main__photo catalog-main__photo--rice-500"></span>
                 <div class="catalog-main__description">
                     <p class="catalog-main__name">Cat energy slim 500 г</p>
                     <table class="catalog-main__table">
@@ -172,14 +174,14 @@
                         </tr>
                         <tr>
                             <td>Цена</td>
-                            <td class="catalog-main__table catalog-main__table--right-col">500 р</td>
+                            <td class="catalog-main__table catalog-main__table--right-col">500 Р.</td>
                         </tr>
                     </table>
                 </div>
                 <a href="#" class="catalog-main__button">Заказать</a>
             </li>
             <span class="separator separator--catalog"></span>
-            <li class="catalog-main__item">
+            <li class="catalog-main__item catalog-main__item--last-item">
                 <a href="#" class="catalog-main__add-item"></a>
                 <p class="catalog-main__show-more">Показать еще 100500 товаров</p>
                 <p class="catalog-main__show-description">На самом деле вкусов гораздо больше!</p>
@@ -203,5 +205,6 @@
         <a href="#" class="page-footer__copyright page-footer__copyright--logo"><img src="img/htmlacademy.svg" alt="HTML-Academy" width="27" height="35"></a>
       </div>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>
