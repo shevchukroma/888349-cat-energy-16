@@ -66,6 +66,7 @@
 
   .page-header--no-js .page-header__menu-list {
     list-style: none;
+    display: block;
     margin: 0;
     padding: 0;
   }
@@ -74,10 +75,6 @@
     margin: auto;
     font-size: 20px;
     text-transform: uppercase;
-  }
-
-  .page-header--no-js .page-header__menu-list {
-    display: block;
   }
 
   .page-header--no-js .page-header__logo {
