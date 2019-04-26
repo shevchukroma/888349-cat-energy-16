@@ -35,7 +35,7 @@
   .page-header {
     position: relative;
 
-    &--no-js {    
+    &--no-js {
       flex-direction: column;
     }
   }
@@ -54,7 +54,7 @@
   .page-header__menu-open .page-header__modal-close {
     display: block;
   }
-  
+
   .page-header--no-js .page-header__menu-btn {
     display: none;
   }
@@ -155,7 +155,7 @@
       color: black;
     }
   }
-  
+
   .page-header--catal .page-header__link {
     color: black;
   }
