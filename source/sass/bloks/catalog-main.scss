@@ -41,33 +41,33 @@
   width: 134px;
   height: 140px;
 
-  &--chicken-500 {
-    background: url("../img/chicken-small-mobile@1x.jpg") no-repeat 50% 50%;
-  }
+  // &--chicken-500 {
+  //   background: url("../img/chicken-small-mobile@1x.jpg") no-repeat 50% 50%;
+  // }
 
-  &--chicken-1000 {
-    background: url("../img/chicken-big-mobile@1x.jpg") no-repeat 50% 50%;
-  }
+  // &--chicken-1000 {
+  //   background: url("../img/chicken-big-mobile@1x.jpg") no-repeat 50% 50%;
+  // }
 
-  &--fish-500 {
-    background: url("../img/fish-small-mobile@1x.jpg") no-repeat 50% 50%;
-  }
+  // &--fish-500 {
+  //   background: url("../img/fish-small-mobile@1x.jpg") no-repeat 50% 50%;
+  // }
 
-  &--fish-1000 {
-    background: url("../img/fish-big-mobile@1x.jpg") no-repeat 50% 50%;
-  }
+  // &--fish-1000 {
+  //   background: url("../img/fish-big-mobile@1x.jpg") no-repeat 50% 50%;
+  // }
 
-  &--buckwheat-500 {
-    background: url("../img/buckwheat-small-mobile@1x.jpg") no-repeat 50% 50%;
-  }
+  // &--buckwheat-500 {
+  //   background: url("../img/buckwheat-small-mobile@1x.jpg") no-repeat 50% 50%;
+  // }
 
-  &--buckwheat-1000 {
-    background: url("../img/buckwheat-big-mobile@1x.jpg") no-repeat 50% 50%;
-  }
+  // &--buckwheat-1000 {
+  //   background: url("../img/buckwheat-big-mobile@1x.jpg") no-repeat 50% 50%;
+  // }
 
-  &--rice-500 {
-    background: url("../img/rice-small-mobile@1x.jpg") no-repeat 50% 50%;
-  }
+  // &--rice-500 {
+  //   background: url("../img/rice-small-mobile@1x.jpg") no-repeat 50% 50%;
+  // }
 }
 
 .catalog-main__button {
@@ -157,11 +157,18 @@
     justify-content: flex-start;
     flex-wrap: nowrap;
     text-align: center;
+    position: relative;
     margin: 0;
     width: 324px;
-    height: 419px;
+    height: 431px;
+    box-sizing: border-box;
+    padding-top: 126px;
     background-color: #f2f2f2;
     margin-top: 139px;
+
+    &--last-item {
+      padding-top: 6px;
+    }
   }
 
   .catalog-main__name {
@@ -208,62 +215,41 @@
   }
 
   .catalog-main__photo {
-    margin: 0 auto;
+    margin: 0;
+    position: absolute;
 
     &--chicken-500 {
-      margin: -54px auto 0 auto;
-      background: url("../img/chicken-small-tablet@1x.png") no-repeat 50% 50%;
-      width: 324px;
-      height: 172px;
+      top: -50px;
     }
 
     &--chicken-1000 {
-      margin: -92px auto 0 auto;
-      background: url("../img/chicken-big-tablet@1x.png") no-repeat 50% 50%;
-      width: 324px;
-      height: 208px;
+      top: -82px;
     }
 
     &--fish-500 {
-      margin: -54px auto 0 auto;
-      background: url("../img/fish-small-tablet@1x.png") no-repeat 50% 50%;
-      width: 324px;
-      height: 174px;
+      top: -50px;
     }
 
     &--fish-1000 {
-      margin: -92px auto 0 auto;
-      background: url("../img/fish-big-tablet@1x.png") no-repeat 50% 50%;
-      width: 324px;
-      height: 208px;
+      top: -82px;
     }
 
     &--buckwheat-500 {
-      margin: -54px auto 0 auto;
-      background: url("../img/buckwheat-small-tablet@1x.png") no-repeat 50% 50%;
-      width: 324px;
-      height: 174px;
+      top: -50px;
     }
 
     &--buckwheat-1000 {
-      margin: -92px auto 0 auto;
-      background: url("../img/buckwheat-big-tablet@1x.png") no-repeat 50% 50%;
-      width: 324px;
-      height: 208px;
+      top: -82px;
     }
 
     &--rice-500 {
-      margin: -54px auto 0 auto;
-      background: url("../img/rice-small-tablet@1x.png") no-repeat 50% 50%;
-      width: 324px;
-      height: 174px;
+      top: -50px;
     }
   }
 }
 
 @media (min-width: 1440px) {
   .catalog-main__title {
-    width: 1440px;
     padding: 0 110px;
     margin: 75px 2px 27px 2px;
   }
@@ -299,53 +285,53 @@
   }
 
   .catalog-main__photo {
-    &--chicken-500 {
-      margin: -54px auto 0 auto;
-      background: url("../img/chicken-small-desktop@1x.png") no-repeat 50% 50%;
-      width: 245px;
-      height: 172px;
-    }
+    // &--chicken-500 {
+    //   margin: -54px auto 0 auto;
+    //   background: url("../img/chicken-small-desktop@1x.png") no-repeat 50% 50%;
+    //   width: 245px;
+    //   height: 172px;
+    // }
 
-    &--chicken-1000 {
-      margin: -90px auto 0 auto;
-      background: url("../img/chicken-big-desktop@1x.png") no-repeat 50% 50%;
-      width: 245px;
-      height: 208px;
-    }
+    // &--chicken-1000 {
+    //   margin: -90px auto 0 auto;
+    //   background: url("../img/chicken-big-desktop@1x.png") no-repeat 50% 50%;
+    //   width: 245px;
+    //   height: 208px;
+    // }
 
-    &--fish-500 {
-      margin: -54px auto 0 auto;
-      background: url("../img/fish-small-desktop@1x.png") no-repeat 50% 50%;
-      width: 245px;
-      height: 174px;
-    }
+    // &--fish-500 {
+    //   margin: -54px auto 0 auto;
+    //   background: url("../img/fish-small-desktop@1x.png") no-repeat 50% 50%;
+    //   width: 245px;
+    //   height: 174px;
+    // }
 
-    &--fish-1000 {
-      margin: -90px auto 0 auto;
-      background: url("../img/fish-big-desktop@1x.png") no-repeat 50% 50%;
-      width: 245px;
-      height: 208px;
-    }
+    // &--fish-1000 {
+    //   margin: -90px auto 0 auto;
+    //   background: url("../img/fish-big-desktop@1x.png") no-repeat 50% 50%;
+    //   width: 245px;
+    //   height: 208px;
+    // }
 
-    &--buckwheat-500 {
-      margin: -54px auto 0 auto;
-      background: url("../img/buckwheat-small-desktop@1x.png") no-repeat 50% 50%;
-      width: 245px;
-      height: 174px;
-    }
+    // &--buckwheat-500 {
+    //   margin: -54px auto 0 auto;
+    //   background: url("../img/buckwheat-small-desktop@1x.png") no-repeat 50% 50%;
+    //   width: 245px;
+    //   height: 174px;
+    // }
 
-    &--buckwheat-1000 {
-      margin: -90px auto 0 auto;
-      background: url("../img/buckwheat-big-desktop@1x.png") no-repeat 50% 50%;
-      width: 245px;
-      height: 208px;
-    }
+    // &--buckwheat-1000 {
+    //   margin: -90px auto 0 auto;
+    //   background: url("../img/buckwheat-big-desktop@1x.png") no-repeat 50% 50%;
+    //   width: 245px;
+    //   height: 208px;
+    // }
 
-    &--rice-500 {
-      margin: -54px auto 0 auto;
-      background: url("../img/rice-small-desktop@1x.png") no-repeat 50% 50%;
-      width: 245px;
-      height: 174px;
-    }
+    // &--rice-500 {
+    //   margin: -54px auto 0 auto;
+    //   background: url("../img/rice-small-desktop@1x.png") no-repeat 50% 50%;
+    //   width: 245px;
+    //   height: 174px;
+    // }
   }
 }

@@ -125,6 +125,12 @@
     padding: 52px 110px 0 110px;
     background: url("../img/index-background-desktop@1x.jpg") no-repeat 100% 0;
 
+    @media (min-resolution: 144dpi),
+      (min-resolution: 1.5dppx) {
+      background-image: url("../img/index-background-desktop@2x.jpg");
+      background-size: 720px auto;
+    }
+
     &--catal {
       background: none;
     }
