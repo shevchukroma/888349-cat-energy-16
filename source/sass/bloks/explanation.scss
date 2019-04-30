@@ -51,24 +51,24 @@
   }
 }
 
-@media (min-resolution: 144dpi), 
-       (min-resolution: 1.5dppx) {
+@media (min-resolution: 144dpi),
+        (min-resolution: 1.5dppx) {
   .explanation__item {
     &--food {
       background-image: url("../img/advantage-leaf@2x.png");
       background-size: 50px 50px;
     }
-  
+
     &--recipe {
       background-image: url("../img/advantage-powder@2x.png");
       background-size: 50px 50px;
     }
-  
+
     &--periodicity {
       background-image: url("../img/advantage-dining@2x.png");
       background-size: 50px 50px;
     }
-  
+
     &--month {
       background-image: url("../img/advantage-clock@2x.png");
       background-size: 50px 50px;
