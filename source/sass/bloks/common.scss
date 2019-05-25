@@ -4,14 +4,28 @@ body {
   width: 320px;
 }
 
+@font-face {
+  font-family: "Oswald";
+  src: url("../fonts/oswaldregular.woff") format("woff"),
+  url("../fonts/oswaldregular.woff2") format("woff2"),
+  url("../fonts/oswaldmedium.woff") format("woff"),
+  url("../fonts/oswaldmedium.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
 @media (min-width: 768px) {
   body {
     width: 768px;
   }
+  
+  .active {
+    border-bottom: 2px solid #68b738;
+  }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1300px) {
   body {
-    width: 1440px;
+    width: 1300px;
   }
 }

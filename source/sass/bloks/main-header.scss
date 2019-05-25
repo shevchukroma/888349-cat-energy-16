@@ -46,6 +46,14 @@
   padding-top: 11px;
   box-sizing: border-box;
   margin: auto auto 0 auto;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: #8fc46e;
+  }
 }
 
 @media (min-width: 768px) {
@@ -89,12 +97,12 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1300px) {
   .main-header {
-    width: 1440px;
-    padding: 79px 110px 0 192px;
+    width: 1300px;
+    padding: 79px 40px 0 122px;
     min-height: 586px;
-    background: url("../img/index-can-desktop@1x.png") no-repeat 561px 30px, url("../img/index-background-desktop@1x.jpg") no-repeat 100% -110px;
+    background: url("../img/index-can-desktop@1x.png") no-repeat 491px 30px, url("../img/index-background-desktop@1x.jpg") no-repeat 112% -110px;
     margin-bottom: 53px;
 
     @media (min-resolution: 144dpi),

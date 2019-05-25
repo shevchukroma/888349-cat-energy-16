@@ -1,0 +1,26 @@
+.map {
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .map {
+    width: 768px;
+  }
+
+  .map__google {
+    width: 768px;
+    height: 394px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .map {
+    position: relative;
+    width: 1300px;
+  }
+
+  .map__google {
+    width: 1300px;
+    height: 399px;
+  }
+}

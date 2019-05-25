@@ -13,10 +13,43 @@
     @include sep;
     width: 240px;
   }
+
+  &--explanation {
+    @include sep;
+    width: 768px;
+    display: none;
+  }
+
+  &--more {
+    @include sep;
+    width: 280px;
+  }
 }
 
 @media (min-width: 768px) {
   .separator {
     display: none;
+
+    &--explanation {
+      display: block;
+    }
+
+    &--more {
+      width: 708px;
+      display: block;
+    }
+  }
+}
+
+@media (min-width: 1300px) {
+  .separator {
+    &--explanation {
+      display: none;
+    }
+    
+    &--more {
+      width: 895px;
+      display: block;
+    }
   }
 }

@@ -1,0 +1,780 @@
+.page-form__title {
+  font-size: 36px;
+  line-height: 60px;
+  padding: 0 20px;
+  font-weight: 500;
+  margin: 14px 0 25px 0;
+}
+
+.page-form__explain {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 0 20px;
+  width: 230px;
+  margin: 14px 0 41px 0;
+}
+
+.page-form__select {
+  color: #222222;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.page-form__age,
+.page-form__weight,
+.page-form__name {
+  padding: 0 20px;
+}
+
+.page-form__select label {
+  margin-right: 12px;
+}
+
+.page-form__select input {
+  padding: 12px 13px;
+  text-transform: uppercase;
+  color: #222222;
+  margin-bottom: 15px;
+  border: 1px solid #e7e7e7;
+}
+
+.page-form__name input {
+  width: 196px;
+}
+
+.page-form__weight input {
+  width: 174px;
+}
+
+.page-form__age input {
+  width: 141px;
+  margin-bottom: 24px;
+}
+
+.page-form__choose {
+  padding: 0 20px 0 67px;
+  margin: 24px 0;
+}
+
+.page-form__choose-radio {
+  display: none;
+}
+
+.page-form__radio {
+  width: 220px;
+  display: block;
+  margin-bottom: 25px;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    border: 1px solid #cecece;
+    border-radius: 50%;
+    box-sizing: border-box;
+    position: absolute;
+    top: -7px;
+    left: -46px;
+    cursor: pointer;
+  }
+
+  &::after {
+    content: "";
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #68b738;
+    position: absolute;
+    top: 2px;
+    left: -37px;
+    display: none;
+    cursor: pointer;
+  }
+
+  &:hover {
+    &::before {
+      border-color: #bfbfbf;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.page-form__choose-radio:checked ~ .page-form__radio::after {
+  display: block;
+}
+
+.page-form__contact {
+  padding-left: 20px;
+  width: 200px;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 500;
+  text-transform: none;
+  margin: 28px 0 35px 0;
+  position: relative;
+
+  &::after {
+    content: "";
+    height: 2px;
+    width: 99px;
+    background-color: #68b738;
+    display: block;
+    position: absolute;
+    top: 14px;
+    left: 221px;
+  }
+}
+
+.page-form__e-mail {
+  padding: 0 20px;
+  position: relative;
+}
+
+.page-form__e-mail label {
+  margin-right: 8px;
+}
+
+.page-form__email-input {  
+  width: 188px;  
+  border: 1px solid #e6e6e6;
+  margin-bottom: 17px;
+
+  &:hover {
+    border-color: #cdcdcd;
+  }
+
+  &:active {
+    border-color: #444444;
+  }
+
+  &:invalid {
+    background-color: #ff8282;
+  }
+}
+
+.page-form__email-input:active ~ .page-form__icon-mail {
+  fill: #68b738;
+}
+
+.page-form__e-mail-input:invalid ~ .page-form__icon-mail {
+  fill: #ff8282;
+}
+
+.page-form__icon-mail {
+  position: absolute;
+  width: 17px;
+  top: 16px;
+  left: 268px;
+}
+
+.page-form__phone {
+  padding: 0 20px;
+  position: relative;
+}
+
+.page-form__phone label {
+  margin-right: 8px;
+}
+
+.page-form__phone .page-form__phone-input {
+  width: 173px;
+
+  &:hover {
+    border-color: #cdcdcd;
+  }
+
+  &:active {
+    border-color: #444444;
+  }
+
+  &:invalid {
+    background-color: #ff8282;
+  }
+}
+
+.page-form__phone-input:active ~ .page-form__icon-phone {
+  fill: #68b738;
+}
+
+.page-form__phone-input:invalid ~ .page-form__icon-phone {
+  fill: #ff8282;
+}
+
+.page-form__icon-phone {
+  position: absolute;
+  width: 20px;
+  top: 12px;
+  left: 268px;
+}
+
+.page-form__comment {
+  padding-left: 20px;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 500;
+  text-transform: none;
+  margin: 12px 0;
+  position: relative;
+
+  &::after {
+    content: "";
+    height: 2px;
+    width: 158px;
+    background-color: #68b738;
+    display: block;
+    position: absolute;
+    top: 15px;
+    left: 163px;
+  }
+}
+
+.page-form__tell {
+  resize: none;
+  width: 280px;
+  height: 150px;
+  margin: 24px 20px;
+  border: 1px solid #cecece;
+  box-sizing: border-box;
+  color: #444444;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  padding: 13px 10px 10px 15px;
+}
+
+.page-form__additionaly {
+  font-size: 24px;
+  line-height: 24px;
+  padding: 0 20px;
+  text-transform: none;
+  margin: 2px 0;
+  position: relative;
+
+  &::after {
+    content: "";
+    height: 2px;
+    width: 136px;
+    background-color: #68b738;
+    display: block;
+    position: absolute;
+    top: 15px;
+    left: 185px;
+  }
+}
+
+.page-form__block-check {
+  margin-top: 41px;
+}
+
+.page-form__ch-label {
+  width: 234px;
+  padding: 0 20px 0 66px;
+  display: block;
+  margin-top: 24px;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    display: block;
+    box-sizing: border-box;
+    border: 1px solid #cfcfcf;
+    position: absolute;
+    left: 21px;
+    top: -6px;
+  }
+
+  &::after {
+    content: "";
+    width: 22px;
+    height: 16px;
+    background: url("../img/icon-tick.svg") no-repeat 50% 50%;
+    position: absolute;
+    display: block;
+    top: 1px;
+    left: 25px;
+    display: none;
+  }
+}
+
+.page-form__button {
+  width: 280px;
+  height: 40px;
+  margin: 40px 20px 8px 20px;
+  border: none;
+  background-color: #68b738;
+  text-transform: uppercase;
+  font-size: 16px;
+  color: white
+}
+
+.page-form__ch-box {
+  display: none;
+}
+
+.page-form__ch-box:checked ~ .page-form__ch-label::after {
+  display: block;
+}
+
+.page-form__notice {
+  font-family: "Arial", sans-serif;
+  color: #444444;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  text-transform: none;
+  margin-bottom: 32px;
+}
+
+
+.page-form__input-block input {
+  &:hover {
+    border-color: #cfcfcf;
+  }
+
+  &:active {
+    border-color: #444444;
+  }
+
+  &:invalid {
+    border-color: #ff8282;
+  }
+}
+
+@media (min-width: 768px) {
+  .page-form__title {
+    font-size: 60px;
+    padding: 0 30px;
+    margin: 30px 0;
+  }
+
+  .page-form__select {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 42px;
+  }
+
+  .page-form__explain {
+    font-size: 20px;
+    line-height: 30px;
+    width: 330px;
+    padding: 0 70px;
+    margin: 56px 0;
+  }
+
+  .page-form__icon-mail {
+    top: 23px;
+    left: 655px;
+  }
+
+  .page-form__icon-phone {
+    top: 20px;
+    left: 665px;
+  }
+
+  .page-form__name {
+    margin-top: 8px;
+  }
+
+  .page-form__name label {
+    padding-left: 52px;
+    font-size: 20px;
+  }
+
+  .page-form__name input {
+    font-size: 20px;
+    padding: 14px 17px;
+    width: 531px;
+  }
+
+  .page-form__weight {
+    margin-top: 5px;
+  }
+
+  .page-form__weight label {
+    padding-left: 52px;
+    font-size: 20px;
+    margin-right: 15px;
+  }
+
+  .page-form__weight input {
+    font-size: 20px;
+    padding: 14px 17px;
+    width: 500px;
+  }
+
+  .page-form__age {
+    margin-top: 4px;
+  }
+
+  .page-form__age label {
+    padding-left: 52px;
+    font-size: 20px;
+    margin-right: 13px;
+  }
+
+  .page-form__age input {
+    font-size: 20px;
+    padding: 14px 17px;
+    width: 461px;
+  }
+  
+  .page-form__choose {
+    width: 632px;
+    height: 196px;
+    border: 1px solid #e6e6e6;
+    margin: 48px 0 48px 71px;
+    box-sizing: border-box;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 34px 20px 0 87px;
+  }
+
+  .page-form__radio {
+    width: 300px;
+    margin-bottom: 33px;
+
+    &::before {
+      width: 40px;
+      height: 40px;
+      top: -11px;
+      left: -59px;
+    }
+
+    &::after {
+      width: 18px;
+      height: 18px;
+      top: 0;
+      left: -48px;
+    }
+  }
+
+  .page-form__contact {
+    width: 512px;
+    font-size: 36px;
+    line-height: 36px;
+    margin: 26px 50px 75px 50px;
+
+    &::after {
+      height: 3px;
+      width: 145px;
+      top: 22px;
+      left: 574px;
+    }
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 22px;
+      left: -49px;
+      background-color: #68b738;
+      height: 3px;
+      width: 30px;
+    }
+  }
+
+  .page-form__e-mail {
+    font-size: 20px;
+    line-height: 20px;
+    margin-left: 10px;
+    padding: 1px 20px;
+  }
+
+  .page-form__e-mail label {
+    margin: 0 8px 0 42px;
+  }
+
+  .page-form__email-input {
+    margin: 0 14px 0 42px;
+  }
+
+  .page-form__e-mail .page-form__email-input {
+    padding: 14px 20px;
+    margin: 0 14px 19px 6px;
+    width: 509px;
+    background-position: 96% 50%;
+  }
+
+  .page-form__phone {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .page-form__phone .page-form__phone-input {
+    padding: 14px 20px;
+    margin-bottom: 21px;
+    width: 493px;
+    background-position: 97% 50%;
+  }
+
+  .page-form__phone label {
+    margin: 0 11px 0 49px;
+  }
+
+  .page-form__comment {
+    font-size: 36px;
+    line-height: 36px;
+    margin: 44px 50px;
+
+    &::after {
+      height: 3px;
+      width: 479px;
+      top: 22px;
+      left: 240px;
+    }
+
+    &::before {
+      content: "";
+      height: 3px;
+      top: 22px;
+      left: -49px;
+      width: 30px;
+      position: absolute;
+      display: block;
+      background-color: #68b738;
+    }
+  }
+
+  .page-form__tell {
+    width: 632px;
+    height: 174px;
+    margin: 32px 71px;
+    font-size: 20px;
+    line-height: 30px;
+    padding: 10px 18px;
+  }
+
+  .page-form__additionaly {
+    font-size: 36px;
+    line-height: 36px;
+    margin: 31px 50px;
+
+    &::after {
+      height: 3px;
+      width: 446px;
+      top: 22px;
+      left: 273px;
+    }
+
+    &::before {
+      content: "";
+      height: 3px;
+      top: 22px;
+      left: -49px;
+      width: 30px;
+      position: absolute;
+      display: block;
+      background-color: #68b738;
+    }
+  }
+
+  .page-form__block-check {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 12px;
+  }
+
+  .page-form__ch-label {
+    font-size: 20px;
+    line-height: 20px;
+    margin: 26px 63px;
+    width: 183px;
+
+    &::before {
+      width: 40px;
+      height: 40px;
+      left: 8px;
+      top: -10px;
+    }
+
+    &::after {
+      top: 2px;
+      left: 16px
+    }
+  }
+
+  .page-form__button {
+    width: 283px;
+    height: 52px;
+    margin: 38px 55px 8px 71px;
+    font-size: 20px;
+  }
+
+  .page-form__notice {
+    width: 192px;
+    font-size: 16px;
+    line-height: 16px;
+    margin: 54px 0 50px 0;
+  }
+}
+
+@media (min-width: 1300px) {
+  .page-form {
+    width: 1300px;
+  }
+
+  .page-form__title {
+    margin: 80px 11px 56px 11px;
+  }
+
+  .page-form__explain {
+    margin: 43px 42px;
+    padding: 0;
+  }
+
+  .page-form__name {
+    margin: 21px 0 0 41px;
+    padding: 0;
+  }
+
+  .page-form__name label {
+    padding-left: 1px;
+  }
+
+  .page-form__name input {
+    width: 470px;
+  }
+
+  .page-form__icon-mail {
+    left: 551px;
+    top: 20px;
+  }
+
+  .page-form__icon-phone {
+    left: 571px;
+    top: 17px;
+  }
+
+  .page-form__weight {
+    margin: 5px 0 0 41px;
+    padding: 0;
+  }
+
+  .page-form__weight label {
+    padding-left: 1px;
+  }
+
+  .page-form__weight input {
+    width: 439px;
+  }
+
+  .page-form__age {
+    margin: 4px 0 0 41px;
+    padding: 0;
+  }
+
+  .page-form__age label {
+    padding-left: 1px;
+  }
+
+  .page-form__age input {
+    width: 400px;
+  }
+
+  .page-form__choose {
+    margin: 21px 0 48px 79px;
+    width: 570px;
+  }
+
+  .page-form__contact {
+    margin: 21px 140px 70px 21px;
+
+    &::before {
+      left: -90px;
+      width: 0;
+    }
+
+    &::after {
+      width: 705px;
+      right: 0;
+    }
+  }
+
+  .page-form__e-mail {
+    margin: 6px 0 5px 23px
+  }
+
+  .page-form__e-mail label {
+    margin: 0 8px 0 0;
+  }
+
+  .page-form__e-mail .page-form__email-input {
+    width: 451px;
+    padding: 13px 16px;
+    margin: 0 14px 19px 9px;
+  }
+
+  .page-form__phone {
+    margin: 7px 0 0 5px;
+  }
+
+  .page-form__phone label {
+    margin: 0 11px 0 18px;
+  }
+
+  .page-form__phone .page-form__phone-input {
+    width: 432px;
+    background-position: 96% 50%;
+  }
+
+  .page-form__comment {
+    margin: 43px 365px 43px 20px;
+
+    &::before {
+      left: -89px;
+      width: 0;
+    }
+
+    &::after {
+      width: 1040px;
+    }
+  }
+
+  .page-form__tell {
+    margin: 33px 41px;
+    width: 1220px;
+  }
+
+  .page-form__additionaly {
+    margin: 34px 21px;
+
+    &::before {
+      left: -90px;
+      width: 0;
+    }
+
+    &::after {
+      width: 1007px;
+    }
+  }
+
+  .page-form__block-check {
+    margin-top: 7px;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .page-form__block-check .page-form__ch-label {
+    width: 164px;
+    margin: 26px 41px 26px 34px;
+  }
+
+  .page-form__button {
+    margin: 44px 76px 41px 42px;
+    width: 568px;
+  }
+
+  .page-form__notice {
+    margin-top: 60px;
+  }
+}
