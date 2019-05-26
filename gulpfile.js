@@ -67,7 +67,7 @@ gulp.task("images", function() {
 });
 
 gulp.task("sprite", function() {
-  return gulp.src("source/img/icon-*.svg")
+  return gulp.src("source/img/*.svg")
   .pipe(svgstore({
     inlineSvg: true
   }))
@@ -85,5 +85,5 @@ gulp.task("clean", function () {
   return del("build");
 });
 
-gulp.task("build", gulp.series("copy", "css", "images", "sprite"));
+gulp.task("build", gulp.series("copy", "css", "sprite"));
 gulp.task("start", gulp.series("build", "server"));
