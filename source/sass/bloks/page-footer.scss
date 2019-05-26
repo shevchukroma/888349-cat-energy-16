@@ -1,9 +1,10 @@
 .page-footer {
   width: 320px;
-  padding: 0 20px;
+  padding: 31px 20px 0 20px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  background-color: #f2f2f2;
 }
 
 .page-footer__link {
@@ -13,32 +14,78 @@
   background: no-repeat 50% 50%;
   margin: 0 auto 31px auto;
 
-  &--vk {
-    background-image: url("../img/icon-vk-mobile.svg");
+  &--vk svg {
+    width: 20px;
+    height: 16px;
   }
 
-  &--insta {
-    background-image: url("../img/icon-insta-mobile.svg");
+  &--vk:hover path {
+    fill: #68b738;
   }
 
-  &--fb {
-    background-image: url("../img/icon-fb-mobile.svg");
+  &--insta svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  &--insta:hover path {
+    fill: #68b738;
+  }
+
+  &--fb svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  &--fb:hover path {
+    fill: #68b738;
+  }
+
+  &--vk:active path {
+    opacity: 0.3;
+  }
+
+  &--insta:active path {
+    opacity: 0.3;
+  }
+
+  &--fb:active path {
+    opacity: 0.3;
   }
 
   &--logo {
     width: 128px;
     height: 24px;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
   }
 }
 
 .page-footer__copyright {
   display: flex;
   justify-content: space-between;
-  margin: 10px 0;
+  margin: 7px 0;
+  text-decoration: none;
+  color: black;
+  width: 280px;
 
   &--dev {
     margin: auto 0;
-    letter-spacing: 2px;
+    font-family: "Arial", sans-serif;
+  }
+
+  &:hover path {
+    fill: #68b738;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
@@ -56,13 +103,46 @@
   .page-footer {
     flex-direction: row;
     width: 768px;
-    padding: 0 30px;
+    padding: 54px 30px;
     justify-content: space-between;
   }
 
   .page-footer__link {
     &--logo {
-      margin: 0;
+      width: 153px;
+      margin: 7px 0;
+    }
+
+    &--vk {
+      margin: 12px auto 31px 7px;
+      width: 32px;
+    }
+
+    &--vk svg {
+      width: 30px;
+      height: 16px;
+    }
+
+    &--insta {
+      height: 22px;
+      width: 27px;
+      margin: 7px auto 31px;
+    }
+
+    &--insta svg {
+      width: 23px;
+      height: 23px;
+    }
+
+    &--fb {
+      height: 27px;
+      width: 24px;
+      margin: 4px auto 31px;
+    }
+
+    &--fb svg {
+      width: 14px;
+      height: 28px;
     }
   }
 
@@ -72,21 +152,23 @@
 
   .page-footer__copyright {
     margin: 0;
+    width: 160px;
 
     &--dev {
-      margin-right: 12px;
+      margin: 10px 13px 0 0;
     }
   }
 
   .page-footer__list {
     margin: 0;
+    width: 140px;
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1300px) {
   .page-footer {
-    width: 1440px;
-    padding: 0 110px;
+    width: 1300px;
+    padding: 53px 40px;
   }
 
   .page-footer__link {
