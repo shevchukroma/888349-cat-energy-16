@@ -299,7 +299,6 @@
     height: 16px;
     background: url("../img/icon-tick.svg") no-repeat 50% 50%;
     position: absolute;
-    display: block;
     top: 1px;
     left: 25px;
     display: none;
@@ -314,7 +313,7 @@
   background-color: #68b738;
   text-transform: uppercase;
   font-size: 16px;
-  color: white
+  color: white;
 }
 
 .page-form__ch-box {
@@ -599,7 +598,7 @@
 
     &::after {
       top: 2px;
-      left: 16px
+      left: 16px;
     }
   }
 
@@ -701,7 +700,7 @@
   }
 
   .page-form__e-mail {
-    margin: 6px 0 5px 23px
+    margin: 6px 0 5px 23px;
   }
 
   .page-form__e-mail label {
