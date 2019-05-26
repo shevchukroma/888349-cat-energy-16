@@ -41,6 +41,7 @@
   display: block;
   width: 134px;
   height: 140px;
+  overflow: hidden;
 }
 
 .catalog-main__button {
@@ -215,6 +216,8 @@
   .catalog-main__photo {
     margin: 0;
     position: absolute;
+    left: 0;
+    overflow: visible;
 
     &--chicken-500 {
       top: -50px;
@@ -268,10 +271,6 @@
   .catalog-main__list {
     width: 1300px;
     padding: 0 40px;
-  }
-
-  .catalog-main__photo {
-    left: -38px;
   }
 
   .catalog-main__item {

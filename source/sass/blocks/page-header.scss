@@ -1,6 +1,6 @@
 .page-header {
   width: 320px;
-  padding: 0 20px;
+  padding: 0;
   display: flex;
   justify-content: space-between;
   box-sizing: border-box;
@@ -8,7 +8,8 @@
 }
 
 .page-header__logo {
-  margin: auto 0;
+  margin: 13px 0;
+  padding: 0 20px;
 
   &:hover {
     opacity: 0.8;
@@ -20,7 +21,7 @@
 }
 
 .page-header__menu {
-  margin: auto 0;
+  margin: 0;
 }
 
 .page-header__menu-btn {
@@ -28,6 +29,7 @@
   height: 18px;
   width: 24px;
   background: url("../img/icon-mobile-menu.svg") no-repeat 50% 50%;
+  margin: 24px 20px 24px 0;
 }
 
 .page-header__menu-item {
@@ -60,15 +62,20 @@
     }
   }
 
+  .page-header__menu-item {
+    font-weight: 500;
+    padding-bottom: 0;
+  }
+
   .page-header__modal-close {
-    width: 22px;
-    height: 22px;
+    width: 19px;
+    height: 19px;
     display: none;
     border: none;
     background: url("../img/icon-close.svg") no-repeat 50% 50%;
     position: absolute;
     right: 22px;
-    top: 8px;
+    top: 22px;
   }
 
   .page-header__menu-open .page-header__modal-close {
@@ -92,9 +99,9 @@
   }
 
   .page-header--no-js .page-header__link {
-    margin: auto;
     font-size: 20px;
     text-transform: uppercase;
+    margin: 20px auto;
   }
 
   .page-header--no-js .page-header__logo {
@@ -110,10 +117,16 @@
     height: 110px;
   }
 
+  .page-header__menu {    
+    margin: 13px 0;
+  }
+
   .page-header__logo {
     width: 173px;
     height: 60px;
     background: url("../img/logo-tablet.svg") no-repeat 50% 50%;
+    padding: 0;
+    margin: 25px 0;
   }
 
   .page-header__modal-close {
@@ -157,6 +170,10 @@
     }
   }
 
+  .page-header__menu {
+    margin: 0;
+  }
+
   .page-header__modal-close {
     display: none;
   }
@@ -175,6 +192,7 @@
     width: 205px;
     height: 60px;
     background: url("../img/logo-desktop.svg") no-repeat 50% 50%;
+    margin: 0;
   }
 
   .page-header__link {

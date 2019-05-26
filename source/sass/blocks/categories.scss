@@ -55,8 +55,8 @@
   color: black;
   width: 240px;
   margin: 19px auto 17px auto;
-  background: url("../img/icon-right-arrow-verylong.svg") no-repeat 44% 50%;
-  background-size: 23px auto;
+  background: url(../img/icon-right-arrow-long.svg) no-repeat 45% 50%;
+  background-size: 24px 12px;
 }
 
 .categories__more {
@@ -102,8 +102,8 @@
   color: black;
   width: 240px;
   margin: 19px auto 17px auto;
-  background: url("../img/icon-right-arrow-verylong.svg") no-repeat 45% 50%;
-  background-size: 23px auto;
+  background: url(../img/icon-right-arrow-long.svg) no-repeat 45% 50%;
+  background-size: 24px 12px;
 }
 
 .categories__more-bg {
@@ -158,13 +158,23 @@
   }
 
   .categories__less-catalog {
-    margin: 0;
+    margin: 4px 0;
     padding: 0;
     font-size: 20px;
     width: 300px;
     height: 25px;
-    background: url("../img/icon-right-arrow-long.svg") no-repeat 47% 50%;
-    background-size: 23px auto;
+    background-position: 48% 48%;
+
+    &:hover {
+      background-image: url("../img/icon-right-arrow-verylong.svg");
+      background-size: 33px 10px;
+      background-position: 89% 48%;
+      width: 180px;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   .categories__more {
@@ -201,19 +211,29 @@
     font-size: 36px;
     text-align: left;
     height: 50px;
-    width: 210px;
+    width: 215px;
     padding: 0;
     margin: 70px 0 11px 0;
   }
 
   .categories__more-catalog {
-    margin: 0;
+    margin: 3px 0;
     padding: 0;
     font-size: 20px;
     width: 300px;
     height: 25px;
-    background: url("../img/icon-right-arrow-long.svg") no-repeat 47% 50%;
-    background-size: 23px auto;
+    background-position: 46% 48%;
+
+    &:hover {
+      background-image: url("../img/icon-right-arrow-verylong.svg");
+      background-size: 33px 10px;
+      background-position: 85% 48%;
+      width: 180px;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }
 
@@ -265,16 +285,6 @@
     margin: 4px 0;
     padding: 0;
     background-position: 91% 44%;
-
-    &:hover {
-      background-image: url("../img/icon-right-arrow-verylong.svg");
-      background-size: 33px auto;
-      width: 180px;
-    }
-
-    &:active {
-      opacity: 0.3;
-    }
   }
 
   .categories__more {
@@ -316,15 +326,5 @@
     margin: 4px 2px;
     padding: 0;
     background-position: 86% 50%;
-
-    &:hover {
-      background-image: url("../img/icon-right-arrow-verylong.svg");
-      background-size: 33px auto;
-      width: 180px;
-    }
-
-    &:active {
-      opacity: 0.3;
-    }
   }
 }

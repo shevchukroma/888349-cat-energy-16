@@ -171,6 +171,7 @@
 .page-form__icon-mail {
   position: absolute;
   width: 17px;
+  height: 13px;
   top: 16px;
   left: 268px;
 }
@@ -211,6 +212,7 @@
 .page-form__icon-phone {
   position: absolute;
   width: 20px;
+  height: 20px;
   top: 12px;
   left: 268px;
 }
@@ -622,6 +624,10 @@
     width: 1300px;
   }
 
+  .page-form__select {
+    overflow: hidden;
+  }
+
   .page-form__title {
     margin: 80px 11px 56px 11px;
   }
@@ -690,11 +696,11 @@
 
     &::before {
       left: -90px;
-      width: 0;
+      width: 70px;
     }
 
     &::after {
-      width: 705px;
+      width: 777px;
       right: 0;
     }
   }
@@ -731,11 +737,11 @@
 
     &::before {
       left: -89px;
-      width: 0;
+      width: 70px;
     }
 
     &::after {
-      width: 1040px;
+      width: 1112px;
     }
   }
 
@@ -749,11 +755,11 @@
 
     &::before {
       left: -90px;
-      width: 0;
+      width: 70;
     }
 
     &::after {
-      width: 1007px;
+      width: 1077px;
     }
   }
 

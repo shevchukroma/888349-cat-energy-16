@@ -9,8 +9,9 @@
 
   @media (min-resolution: 144dpi),
     (min-resolution: 1.5dppx) {
-    background-image: url("../img/index-can-mobile@2x.jpg"), url("../img/index-background-mobile@2x.jpg");
-    background-size: 280px 271px, 640px 610px;
+    background-image: url("../img/index-can-mobile@2x.png"), url("../img/index-background-mobile@2x.jpg");
+    background-size: 280px 271px, 320px 305px;
+    // background-size: 280px 271px, 640px 610px;
   }
 }
 
