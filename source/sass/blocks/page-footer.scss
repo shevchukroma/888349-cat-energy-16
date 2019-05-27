@@ -7,6 +7,11 @@
   background-color: #f2f2f2;
 }
 
+.page-footer__social {
+  border-bottom: 1px solid #d9d9d9;
+  border-top: 1px solid #d9d9d9;
+}
+
 .page-footer__link {
   display: block;
   height: 19px;
@@ -70,7 +75,7 @@
 .page-footer__copyright {
   display: flex;
   justify-content: space-between;
-  margin: 7px 0;
+  margin: 10px 0;
   text-decoration: none;
   color: black;
   width: 280px;
@@ -153,6 +158,7 @@
 
   .page-footer__social {
     height: 50px;
+    border: none;
   }
 
   .page-footer__copyright {

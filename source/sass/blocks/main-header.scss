@@ -11,7 +11,6 @@
     (min-resolution: 1.5dppx) {
     background-image: url("../img/index-can-mobile@2x.png"), url("../img/index-background-mobile@2x.jpg");
     background-size: 280px 271px, 320px 305px;
-    // background-size: 280px 271px, 640px 610px;
   }
 }
 
@@ -103,8 +102,18 @@
     width: 1300px;
     padding: 79px 40px 0 122px;
     min-height: 586px;
-    background: url("../img/index-can-desktop@1x.png") no-repeat 491px 30px, url("../img/index-background-desktop@1x.jpg") no-repeat 112% -110px;
     margin-bottom: 53px;
+    position: relative;
+  }
+
+  .main-header__bg {
+    position: absolute;
+    top: 0;
+    height: 586px;
+    width: 100vw;
+    left: calc(-50vw + 50%);
+    background: url("../img/index-can-desktop@1x.png") no-repeat 38vw 38%, url("../img/index-background-desktop@1x.jpg") no-repeat 112% -110px, -webkit-linear-gradient(left, white, white 50%, #65a93c 50%, #65a93c);
+    z-index: 0;
 
     @media (min-resolution: 144dpi),
       (min-resolution: 1.5dppx) {
@@ -113,7 +122,19 @@
     }
   }
 
+  .main-header__title {
+    position: relative;
+    z-index: 1;
+  }
+
+  .main-header__btn {
+    position: relative;
+    z-index: 1;
+  }
+
   .main-header__question {
     margin: 20px 0 56px 0;
+    position: relative;
+    z-index: 1;
   }
 }

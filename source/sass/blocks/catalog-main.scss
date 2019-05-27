@@ -17,12 +17,19 @@
 }
 
 .catalog-main__item {
-  width: 280px;
-  margin: 0 auto 15px auto;
-  padding: 6px 0;
+  width: 320px;
+  margin: 0 auto;
+  padding: 8px 20px 19px 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  border-top: 1px solid #d9d9d9;
+  border-left: 1px solid #d9d9d9;
+  border-right: 1px solid #d9d9d9;
+
+  &--last-item {
+    border: 1px solid #d9d9d9;
+  }
 }
 
 .catalog-main__name {
@@ -157,12 +164,17 @@
     padding-top: 126px;
     background-color: #f2f2f2;
     margin-top: 139px;
+    border: none;
 
     &--last-item {
       padding-top: 6px;
       background-color: white;
       border: 1px solid #f2f2f2;
     }
+  }
+
+  .catalog-main__show-btn {
+    width: 250px;
   }
 
   .catalog-main__name {
