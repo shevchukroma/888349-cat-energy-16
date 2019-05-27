@@ -24,6 +24,10 @@
   margin: 0;
 }
 
+.page-header__bg {
+  display: none;
+}
+
 .page-header__menu-btn {
   display: block;
   height: 18px;
@@ -162,14 +166,14 @@
   .page-header {
     width: 1300px;
     padding: 52px 40px 0 40px;
-    background: url("../img/index-background-desktop@1x.jpg") no-repeat 112% 0;
 
     &--catal {
       background: none;
     }
   }
 
-  .page-header__bg {    
+  .page-header__bg {
+    display: block;
     position: absolute;
     top: 0;
     height: 110px;
