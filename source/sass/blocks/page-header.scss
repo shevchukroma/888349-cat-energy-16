@@ -187,7 +187,7 @@
       display: block;
       height: 100%;
       width: 50vw;
-      background-color: #fff;
+      background-color: #ffffff;
       overflow: hidden;
     }
 
@@ -220,6 +220,10 @@
   .page-header__logo {
     position: relative;
     z-index: 1;
+    width: 205px;
+    height: 60px;
+    background: url("../img/logo-desktop.svg") no-repeat 50% 50%;
+    margin: 0;
   }
 
   .page-header__modal-close {
@@ -234,13 +238,6 @@
     width: 475px;
     font-size: 20px;
     margin-top: 21px;
-  }
-
-  .page-header__logo {
-    width: 205px;
-    height: 60px;
-    background: url("../img/logo-desktop.svg") no-repeat 50% 50%;
-    margin: 0;
   }
 
   .page-header__link {
