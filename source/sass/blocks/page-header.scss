@@ -166,6 +166,7 @@
   .page-header {
     width: 1300px;
     padding: 52px 40px 0 40px;
+    position: relative;
 
     &--catal {
       background: none;
@@ -173,14 +174,34 @@
   }
 
   .page-header__bg {
-    display: block;
+    display: flex;
     position: absolute;
     top: 0;
     height: 110px;
     width: 100vw;
     left: calc(-50vw + 50%);
-    z-index: 0;
-    background: url("../img/index-background-desktop@1x.jpg") no-repeat 112% 0, -webkit-linear-gradient(left, white, white 50%, #65a93c 50%, #65a93c);
+    background: url("../img/index-background-desktop@1x.jpg") no-repeat 112% 0;
+
+    &::before {
+      content: "";
+      display: block;
+      height: 100%;
+      width: 50vw;
+      background-color: #fff;
+      overflow: hidden;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      height: 100%;
+      width: 50vw;
+      background: #65a93c;
+      position: absolute;
+      left: 50vw;
+      z-index: -2;
+      overflow: hidden;
+    }
 
     @media (min-resolution: 144dpi),
       (min-resolution: 1.5dppx) {
@@ -191,7 +212,8 @@
 
   .page-header__menu {
     margin: 0;
-    position: relative;
+    position: absolute;
+    right: 40px;
     z-index: 1;
   }
 

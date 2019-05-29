@@ -12,6 +12,10 @@
   border-top: 1px solid #d9d9d9;
 }
 
+.page-footer__bg {
+  display: none;
+}
+
 .page-footer__link {
   display: block;
   height: 19px;
@@ -112,6 +116,12 @@
     justify-content: space-between;
   }
 
+  .page-footer__container {
+    display: flex;
+    justify-content: space-between;
+    width: 708px;
+  }
+
   .page-footer__link {
     &--logo {
       width: 153px;
@@ -180,11 +190,29 @@
   .page-footer {
     width: 1300px;
     padding: 53px 40px;
+    position: relative;
+    background: none;
+    display: block;
   }
 
   .page-footer__link {
     &--logo {
       width: 152px;
     }
+  }
+
+  .page-footer__container {
+    width: 1220px;
+  }
+
+  .page-footer__bg {
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100vw;
+    top: 0;
+    left: calc(-50vw + 50%);
+    z-index: -1;
+    background-color: #f2f2f2;
   }
 }

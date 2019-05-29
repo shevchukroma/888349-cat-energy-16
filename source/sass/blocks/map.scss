@@ -17,10 +17,14 @@
   .map {
     position: relative;
     width: 1300px;
+    height: 399px;
   }
 
   .map__google {
-    width: 1300px;
+    position: absolute;
+    width: 100vw;
+    left: calc(-50vw + 50%);
     height: 399px;
+    z-index: 0;
   }
 }

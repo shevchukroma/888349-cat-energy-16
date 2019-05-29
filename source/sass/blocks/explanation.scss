@@ -22,7 +22,7 @@
   margin: 13px 0;
 }
 
-.explanation__item {
+.explanation__items {
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
@@ -30,7 +30,9 @@
   box-sizing: border-box;
   background: no-repeat 5% 50%;
   position: relative;
+}
 
+.explanation__item {
   &--food {
     @include icon;
     background-image: url("../img/advantage-leaf@1x.png");
@@ -122,17 +124,6 @@
   }
 
   .explanation__item {
-    width: 324px;
-    padding: 100px 0 0 0;
-
-    &--top {
-      margin-bottom: 120px;
-    }
-
-    &--bottom {
-      margin-bottom: 91px;
-    }
-
     &--food {
       top: 1px;
       width: 81px;
@@ -161,6 +152,19 @@
       padding: 0;
     }
   }
+
+  .explanation__items {
+    width: 324px;
+    padding: 100px 0 0 0;
+
+    &--top {
+      margin-bottom: 120px;
+    }
+
+    &--bottom {
+      margin-bottom: 91px;
+    }
+  }
 }
 
 @media (min-width: 1300px) {
@@ -181,8 +185,12 @@
     top: -22px;
   }
 
-  .explanation__item {
+  .explanation__items {
     width: 245px;
+    margin: 13px 0;
+  }
+
+  .explanation__item {
     margin: 13px 0;
 
     &--food {

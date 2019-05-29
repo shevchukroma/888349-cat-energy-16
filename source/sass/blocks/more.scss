@@ -173,7 +173,7 @@
 }
 
 @media (min-width: 1300px) {
-  .more__goods {
+  .more {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 87px;
@@ -202,7 +202,8 @@
 
   .more__item {
     width: 895px;
-    border: none;
+    border-left: none;
+    border-right: none;
     margin: 0;
   }
 

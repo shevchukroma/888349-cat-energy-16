@@ -1,3 +1,9 @@
+html {
+  overflow-x: hidden;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  overflow-y: overlay;
+}
+
 body {
   font-family: "Oswald", "Arial", sans-serif;
   margin: 0 auto;
@@ -22,7 +28,7 @@ body {
   }
 }
 
-@media (min-width: 1300px) {
+@media (min-width: 1300px) { 
   body {
     width: 1300px;
   }

@@ -381,8 +381,8 @@
   }
 
   .example__bg {
-    width: 1300px;
-    left: 0;
+    width: 100vw;
+    left: calc(-50vw + 50%);
     background-color: #f2f2f2;
   }
 
